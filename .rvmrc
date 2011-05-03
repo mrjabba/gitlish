@@ -1,1 +1,2 @@
-rvm ruby-1.9.2@gitlish
+rvm --create ruby-1.9.2@gitlish
+rvm use ruby-1.9.2@gitlish

@@ -1,6 +1,4 @@
-require 'test/unit'
-require './gitlish'
-require 'mocha'
+require 'helper'
 
 class TestService < Test::Unit::TestCase
 

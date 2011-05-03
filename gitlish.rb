@@ -5,7 +5,6 @@ require 'rdelicious'
 
 module Gitlish
   #Example result: http://www.delicious.com/mrjabba/gitlish
-  #TODO consider refactoring this so it can be its own gem and called from the command line
 
   class Repo
     attr_accessor :name, :url, :owner, :description, :username
