@@ -7,10 +7,10 @@ class Delishreformat
     f = File.open(@file_path)
     doc = Nokogiri::XML(f)
     nodes = doc.xpath("//DT/A")
-    nodes.each { |element| 
-      puts "<bookmark><title>#{element.text}</title><url>#{element['HREF']}</url><tags>#{element['TAGS']}</tags></bookmark>" 
+    nodes.each { |element|
+      puts "<bookmark><title>#{element.text}</title><url>#{element['HREF']}</url><tags>#{element['TAGS']}</tags></bookmark>"
     }
-    f.close    
+    f.close
     puts "end"
   end
 end

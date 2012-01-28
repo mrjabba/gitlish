@@ -2,7 +2,7 @@
 
 This is a script that will export your gitub favorites and import them into your delicious.com account.
 
-It will tag them with "gitlish". 
+It will tag them with "gitlish".
 
 How do I use this thing?
 

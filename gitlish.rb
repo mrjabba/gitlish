@@ -12,7 +12,7 @@ module Gitlish
 
   class Client
     attr_accessor :git_name
- 
+
     def initialize(git_name,delish_name,delish_pass)
       self.git_name = git_name
       @gitlish_tag = "gitlish"
@@ -27,9 +27,9 @@ module Gitlish
 
     def github_retrieve_list()
       @data = github_retrieve()
-      @results = JSON.parse(@data)["repositories"]	
+      @results = JSON.parse(@data)["repositories"]
       @list = []
-      @results.each {|item| 
+      @results.each {|item|
         repo = Repo.new
         repo.name = item["name"]
         repo.username = git_name
@@ -44,7 +44,7 @@ module Gitlish
     def publish_delish(repo_list)
       if repo_list != nil
         count = 0
-        repo_list.each {|repo| 
+        repo_list.each {|repo|
           if(@d.is_connected?)
            if(@d.url_exists?(repo.url))
               puts "#{repo.url} already exists...skipping"
@@ -53,7 +53,7 @@ module Gitlish
               @d.add(repo.url, repo.name, repo.description, @gitlish_tag)
               count += 1
             end
-          else 
+          else
             puts "Not connected. Are you sure your delicious login information is correct?"
           end
         }

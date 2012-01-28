@@ -43,10 +43,10 @@ class TestService < Test::Unit::TestCase
     repo2.description = "description2"
     @list.push(repo1)
     @list.push(repo2)
-    
+
     service.publish_delish(@list)
 
-    #assert stuff    
+    #assert stuff
 
   end
 
