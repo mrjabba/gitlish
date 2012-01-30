@@ -8,5 +8,5 @@ group :development do
   gem "mocha", "~> 0.9.9"
   gem "nokogiri", "~> 1.4.4"
   gem "rdelicious", "~> 1.0.2"
-  gem "www-delicious", "~> 0.4.0"  
+  gem "www-delicious", "~> 0.4.0"
 end
