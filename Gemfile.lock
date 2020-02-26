@@ -1,9 +1,11 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    mini_portile2 (2.4.0)
     mocha (0.9.9)
       rake
-    nokogiri (1.4.4)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
     rake (0.8.7)
     rdelicious (1.0.2)
     simplecov (0.4.2)
@@ -16,7 +18,7 @@ PLATFORMS
 
 DEPENDENCIES
   mocha (~> 0.9.9)
-  nokogiri (~> 1.4.4)
+  nokogiri (~> 1.10.8)
   rdelicious (~> 1.0.2)
   simplecov (>= 0.3.5)
   www-delicious (~> 0.4.0)
