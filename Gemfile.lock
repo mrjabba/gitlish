@@ -6,7 +6,7 @@ GEM
       rake
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    rake (0.8.7)
+    rake (13.0.1)
     rdelicious (1.0.2)
     simplecov (0.4.2)
       simplecov-html (~> 0.4.4)
